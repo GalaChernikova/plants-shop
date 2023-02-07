@@ -1,0 +1,97 @@
+<style>
+    .main-slide {
+        position: relative;
+    }
+
+    .mainSwiper {
+        width: 100%;
+        max-height: 685px;
+        height: 100%;
+
+    }
+
+    .swiper-slide {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* height: 100%; */
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .swiper-pagination {
+        margin-right: 45px;
+    }
+
+    .swiper-pagination-bullet {
+        font-family: 'Lato';
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        opacity: 1;
+        background: transparent;
+        --swiper-pagination-bullet-vertical-gap: 16px;
+    }
+
+    .swiper-pagination-bullet-active {
+        font-family: 'Lato';
+        color: #285A43;
+        background: transparent;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: underline;
+    }
+</style>
+
+<!-- Swiper -->
+<div class="swiper mainSwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide main-slide">
+            @@include('./iconMenu.html', {})
+            <img src="./../images/main/main_1/main_1.png" alt="main_1"
+                srcset="./../images/main/main_1/main_1.png 1x, ./../images/main/main_1/main_1@2x.png 2x, ./../images/main/main_1/main_1@3x.png 3x">
+            @@include('./main_title.html', {})
+        </div>
+        <div class="swiper-slide main-slide">
+            @@include('./iconMenu.html', {})
+            <img src="./../images/main/main_2/main_2.png" alt="main_2"
+                srcset="./../images/main/main_2/main_2.png 1x, ./../images/main/main_2/main_2@2x.png 2x, ./../images/main/main_2/main_2@3x.png 3x">
+            @@include('./main_title.html', {})
+        </div>
+        <div class="swiper-slide main-slide">
+            @@include('./iconMenu.html', {})
+            <img src="./../images/main/main_1/main_1.png" alt="main_1"
+                srcset="./../images/main/main_1/main_1.png 1x, ./../images/main/main_1/main_1@2x.png 2x, ./../images/main/main_1/main_1@3x.png 3x">
+            @@include('./main_title.html', {})
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mainSwiper", {
+        direction: "vertical",
+        pagination: {
+            el: ".swiper-pagination",
+
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + "0" + (index + 1) + "</span>";
+            },
+        },
+    });
+</script>

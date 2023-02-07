@@ -1,62 +1,123 @@
-// =====================================================================================================================
+// 
 .header {
-  width: 100%;
-  &.sticky {
-    // ..стили для липкого хедера
-  }
-  // .header__container
-  &__container {
-    height: rem($headerHeight);
-    display: flex;
-    align-items: center;
-  }
-}
-// =====================================================================================================================
 
-// Burger
-/*
-.icon-menu {
-  display: none;
-  @include media(767) {
-    display: block;
-    position: relative;
-    width: rem(30);
-    height: rem(18);
-    cursor: pointer;
-    z-index: 5;
-    span,
-    &::before,
-    &::after {
-      content: "";
-      transition: all 300ms ease 0ms;
-      right: 0;
-      position: absolute;
-      width: 100%;
-      height: rem(2);
-      background-color: #000;
-    }
-    &::before {
-      top: 0;
-    }
-    &::after {
-      bottom: 0;
-    }
-    span {
-      top: calc(50% - rem(1));
-    }
-    .menu-open & {
-      span {
-        width: 0;
-      }
-      &::before {
-        top: calc(50% - rem(1));
-        transform: rotate(-45deg);
-      }
-      &::after {
-        bottom: calc(50% - rem(1));
-        transform: rotate(45deg);
-      }
-    }
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar {
+  padding: 0;
+}
+
+
+.main-navbar {
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+
+  font-family: 'Lato';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.navbar-collapse {
+  flex-grow: unset !important;
+  max-width: 620px;
+  width: 100%;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+
+.navbar-brand {
+  margin-right: 0;
+  margin-left: 3rem;
+}
+
+.navbar-nav {
+  max-width: 415px;
+  width: 100%;
+}
+
+.nav-link {
+
+  &:hover,
+  &:focus,
+  .active {
+    text-decoration: underline;
   }
 }
-*/
+
+.main-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  border-radius: 3px;
+  padding: 11px 50px;
+  color: #FFFFFF;
+}
+
+.main-button__img{
+  width: 24px !important;
+  height: 24px !important;
+  margin-right: 10px;
+}
+
+.main-title-container {
+  position: absolute;
+}
+
+.main-title {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.main-title__text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #F8F8F8;
+  max-width: 787px;
+  width: 100%;
+  margin: 0 auto 37px;
+}
+
+.main-title__buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 378px;
+  width: 100%;
+}
+
+.main-button--green{
+  padding: 12px 50px;
+  background: #285A43;
+  border-radius: 3px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #FFFFFF;
+}
+
+.main-button--watch {
+  padding: 8px 35px;
+}
