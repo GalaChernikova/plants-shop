@@ -30,6 +30,12 @@
 
     opacity: 0.8;
 }
+.help-boxes{
+    @media (max-width: 1200px) {
+        gap: 20px;
+        margin: 0 auto;
+    }
+}
 .help-box{
     max-width: 350px !important;
     width: 100%;
@@ -38,6 +44,13 @@
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.02);
     border-radius: 10px;
     padding: 20px 41px 56px 50px !important;
+    @media (max-width: 1200px) {
+        margin: 0 auto;
+    }
+    @media (max-width: 400px) {
+        max-width: 300px !important;
+        width: 100%;
+    }
 
 }
 
@@ -79,6 +92,13 @@
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.02);
     border-radius: 10px;
     padding: 20px 41px 56px 50px !important;
+    @media (max-width: 1200px) {
+        margin: 0 auto;
+    }
+    @media (max-width: 400px) {
+        max-width: 300px !important;
+        width: 100%;
+    }
 
 }
 .help-box--green h5{
@@ -105,4 +125,5 @@
     max-width: 259px;
     width: 100%;
 }
+
 

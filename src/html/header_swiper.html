@@ -1,6 +1,15 @@
 <style>
-    .main-slide {
-        position: relative;
+    /* .main-slide {
+
+    } */
+    .main-slide-1,
+    .main-slide-3{
+        background: url("./../images/main/main_1/main_1.png") no-repeat;
+        background-size: cover;
+    }
+    .main-slide-2{
+        background: url("./../images/main/main_2/main_2.png") no-repeat;
+        background-size: cover;
     }
 
     .mainSwiper {
@@ -14,7 +23,7 @@
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         /* height: 100%; */
     }
@@ -51,8 +60,13 @@
         line-height: 19px;
         text-decoration: underline;
     }
+    @media (max-width: 1200px) {
+        .swiper-pagination{
+            margin-right: 25px;
+        }
+    }
 
-    @media (max-width: 1350px) {
+    /* @media (max-width: 1350px) {
         .mainSwiper {
             max-height: 590px;
         }
@@ -71,28 +85,25 @@
         .mainSwiper {
             max-height: 273px;
         }
-    }
+    } */
 </style>
 
 <!-- Swiper -->
 <div class="swiper mainSwiper">
     <div class="swiper-wrapper">
-        <div class="swiper-slide main-slide">
+        <div class="swiper-slide main-slide main-slide-1">
             @@include('./iconMenu.html', {})
-            <img src="./../images/main/main_1/main_1.png" alt="main_1" class="img-fluid"
-                srcset="./../images/main/main_1/main_1.png 1x, ./../images/main/main_1/main_1@2x.png 2x, ./../images/main/main_1/main_1@3x.png 3x">
+            
             @@include('./main_title.html', {})
         </div>
-        <div class="swiper-slide main-slide">
+        <div class="swiper-slide main-slide main-slide-2">
             @@include('./iconMenu.html', {})
-            <img src="./../images/main/main_2/main_2.png" alt="main_2" class="img-fluid"
-                srcset="./../images/main/main_2/main_2.png 1x, ./../images/main/main_2/main_2@2x.png 2x, ./../images/main/main_2/main_2@3x.png 3x">
+            
             @@include('./main_title.html', {})
         </div>
-        <div class="swiper-slide main-slide">
+        <div class="swiper-slide main-slide main-slide-3">
             @@include('./iconMenu.html', {})
-            <img src="./../images/main/main_1/main_1.png" alt="main_1" class="img-fluid"
-                srcset="./../images/main/main_1/main_1.png 1x, ./../images/main/main_1/main_1@2x.png 2x, ./../images/main/main_1/main_1@3x.png 3x">
+            
             @@include('./main_title.html', {})
         </div>
     </div>
