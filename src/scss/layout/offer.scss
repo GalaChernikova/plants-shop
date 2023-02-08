@@ -1,11 +1,96 @@
-.offer-container{
+.offer-container {
     margin-bottom: 120px;
 }
-.title-offer{
+
+.title-offer {
     margin-bottom: 45px;
     text-align: center;
 }
+
 .card {
     max-width: 280px;
     width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.03) !important;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.02) !important;
+    border-radius: 10px !important;
+    margin: 0 auto 25px !important;
+}
+.card img{
+    width: 280px;
+    height: 250px;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+.card-group{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: capitalize;
+
+    color: #337A5B;
+}
+.card-body,
+.price-text{
+    display: flex;
+    align-items: center;
+}
+
+.card-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    text-decoration-line: line-through;
+    text-transform: capitalize;
+    color: #121212;
+
+    opacity: 0.5;
+}
+
+.new-price {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    text-transform: capitalize;
+
+    color: #337A5B;
+    margin-left: 7px;
+}
+
+.price-button {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 140%;
+
+    text-transform: capitalize;
+
+    color: #337A5B;
+    border: 1px solid rgba(51, 122, 91, 0.6);
+    border-radius: 3px;
+    
+    background: transparent;
+    margin-left: auto;
+
+    width: 98px;
+    height: 33px;
+
+    &:hover,
+    &:focus {
+        background: #337A5B;
+        border-radius: 3px;
+        color: #FFFFFF;
+    }
 }
