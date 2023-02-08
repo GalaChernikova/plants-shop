@@ -1,1 +1,403 @@
-<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="css/style.min.css?_v=20230206162634"><title>Главная</title></head><body><div class="wrapper"><header class="header"><div class="header__container"><a href="#" class="header__logo logo"></a><nav class="header__menu menu"><ul class="menu__list"><li class="menu__item"><a href="#" class="menu__link">Link</a></li></ul></nav></div></header><main class="page"><div data-observ></div></main><footer class="footer"><div class="footer__container"></div></footer></div><script src="js/app.min.js?_v=20230206162634"></script></body></html>
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <title>Plants shop</title>
+</head>
+  <body>
+    <div class="wrapper">
+      
+      <header class="header">
+  <div class="container header_container">
+    <div class="row">
+      <div class="col-12">
+        <style>
+    /* .main-slide {
+
+    } */
+    .main-slide-1,
+    .main-slide-3{
+        background: url("./../images/main/main_1/main_1.png") no-repeat;
+        background-size: cover;
+    }
+    .main-slide-2{
+        background: url("./../images/main/main_2/main_2.png") no-repeat;
+        background-size: cover;
+    }
+
+    .mainSwiper {
+        width: 100%;
+        max-height: 685px;
+        height: 100%;
+
+    }
+
+    .swiper-slide {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        /* height: 100%; */
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .swiper-pagination {
+        margin-right: 45px;
+    }
+
+    .swiper-pagination-bullet {
+        font-family: 'Lato';
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        opacity: 1;
+        background: transparent;
+        --swiper-pagination-bullet-vertical-gap: 16px;
+    }
+
+    .swiper-pagination-bullet-active {
+        font-family: 'Lato';
+        color: #285A43;
+        background: transparent;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: underline;
+    }
+    @media (max-width: 1200px) {
+        .swiper-pagination{
+            margin-right: 25px;
+        }
+    }
+
+    /* @media (max-width: 1350px) {
+        .mainSwiper {
+            max-height: 590px;
+        }
+    }
+    @media (max-width: 1200px) {
+        .mainSwiper {
+            max-height: 493px;
+        }
+    }
+    @media (max-width: 1000px) {
+        .mainSwiper {
+            max-height: 367px;
+        }
+    }
+    @media (max-width: 800px) {
+        .mainSwiper {
+            max-height: 273px;
+        }
+    } */
+</style>
+
+<!-- Swiper -->
+<div class="mainSwiper swiper">
+    <div class="swiper-wrapper">
+        <div class="main-slide swiper-slide main-slide-1">
+            <nav class="text-white bg-transparent justify-content-between main-navbar navbar navbar-expand-xl">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="./../images/icons/logo.svg" alt="logo">
+    </a>
+    <button class="d-lg-none navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><img src="./../images/icons/icon_menu.svg" alt="icon_menu"></span>
+    </button>
+    <div class="collapse ml-auto navbar-collapse" id="collapsibleNavId">
+      <ul class="justify-content-xl-between mt-2 mt-lg-0 navbar-nav">
+        <li class="nav-item">
+          <a class="text-white nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white nav-link" href="#">Planters</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="main-button">Call Us</button>
+
+    </div>
+  </div>
+</nav>
+            
+            <div class="container-lg main-title-container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="main-title">Nature's Beauty Delivered to You</h1>
+            <p class="main-title__text">Nature's beauty is just a click away with our online flower and plant shop. We offer a wide variety of flowers that will bring a touch of nature to your home!</p>
+
+            <div class="main-title__buttons">
+                <button type="button" class="main-button--green">Book Now</button>
+                <button type="button" class="main-button main-button--watch">
+                    <img src="./../images/icons/icon_watch.svg" alt="icon_watch" class="main-button__img">
+                    Watch Video</button>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="main-slide swiper-slide main-slide-2">
+            <nav class="text-white bg-transparent justify-content-between main-navbar navbar navbar-expand-xl">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="./../images/icons/logo.svg" alt="logo">
+    </a>
+    <button class="d-lg-none navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><img src="./../images/icons/icon_menu.svg" alt="icon_menu"></span>
+    </button>
+    <div class="collapse ml-auto navbar-collapse" id="collapsibleNavId">
+      <ul class="justify-content-xl-between mt-2 mt-lg-0 navbar-nav">
+        <li class="nav-item">
+          <a class="text-white nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white nav-link" href="#">Planters</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="main-button">Call Us</button>
+
+    </div>
+  </div>
+</nav>
+            
+            <div class="container-lg main-title-container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="main-title">Nature's Beauty Delivered to You</h1>
+            <p class="main-title__text">Nature's beauty is just a click away with our online flower and plant shop. We offer a wide variety of flowers that will bring a touch of nature to your home!</p>
+
+            <div class="main-title__buttons">
+                <button type="button" class="main-button--green">Book Now</button>
+                <button type="button" class="main-button main-button--watch">
+                    <img src="./../images/icons/icon_watch.svg" alt="icon_watch" class="main-button__img">
+                    Watch Video</button>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="main-slide swiper-slide main-slide-3">
+            <nav class="text-white bg-transparent justify-content-between main-navbar navbar navbar-expand-xl">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="./../images/icons/logo.svg" alt="logo">
+    </a>
+    <button class="d-lg-none navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><img src="./../images/icons/icon_menu.svg" alt="icon_menu"></span>
+    </button>
+    <div class="collapse ml-auto navbar-collapse" id="collapsibleNavId">
+      <ul class="justify-content-xl-between mt-2 mt-lg-0 navbar-nav">
+        <li class="nav-item">
+          <a class="text-white nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white nav-link" href="#">Planters</a>
+        </li>
+        <li class="nav-item">
+          <a class="text-white nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="main-button">Call Us</button>
+
+    </div>
+  </div>
+</nav>
+            
+            <div class="container-lg main-title-container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="main-title">Nature's Beauty Delivered to You</h1>
+            <p class="main-title__text">Nature's beauty is just a click away with our online flower and plant shop. We offer a wide variety of flowers that will bring a touch of nature to your home!</p>
+
+            <div class="main-title__buttons">
+                <button type="button" class="main-button--green">Book Now</button>
+                <button type="button" class="main-button main-button--watch">
+                    <img src="./../images/icons/icon_watch.svg" alt="icon_watch" class="main-button__img">
+                    Watch Video</button>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mainSwiper", {
+        direction: "vertical",
+        pagination: {
+            el: ".swiper-pagination",
+
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + "0" + (index + 1) + "</span>";
+            },
+        },
+    });
+</script>
+      </div>
+    </div>
+
+   
+   
+  </div>
+</header>
+      <main class="page">
+        <div data-observ></div>
+        <section class="help">
+    <div class="container help-container">
+        <div class="row title-row">
+            <div class="col-lg-12 col-xl-6">
+                <h2 class="title title-help">We Help choose the most suitable plants for you</h2>
+            </div>
+            <div class="col-lg-12 col-xl-6">
+                <p class="title__title-text">
+                    Our selection includes a wide variety of flowers, from classic roses to exotic orchids, as well as a variety of lush indoor and outdoor plants and also offer unique floral arrangements that are perfect for any occasion, whether you're looking to brighten up your home or send a thoughtful gift. 
+                </p>
+            </div>
+        </div>
+        <div class="row help-boxes justify-content-lg-center justify-content-xl-between">
+            <div class="col-lg-12 col-xl-4 help-box">
+                <img src="./../images/icons/icon_indoor_plant.svg" alt="icon_indoor_plant">
+                <h5>Indoor Plants</h5>
+                <p>Bring the beauty of nature to your outdoor spaces with our wide selection of outdoor plants</p>
+            </div>
+            <div class="col-12 col-lg-4 help-box--green">
+                <img src="./../images/icons/icon_outdoor_plant.svg" alt="outdoor">
+                <h5>Outdoor Plants</h5>
+                <p>Bring a touch of greenery to your living spaces with our collection of indoor plants, perfect for purifying the air and adding a natural touch to your home.</p>
+            </div>
+            <div class="col-12 col-lg-4 help-box">
+                <img src="./../images/icons/icon_bamboo.svg" alt="icon_bamboo">
+                <h5>Plants Pots</h5>
+                <p>Add a touch of style to your indoor or outdoor spaces with our collection of pots plants, available in a variety of sizes and designs to fit any decor</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="offer">
+    <div class="container offer-container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="title title-offer">What we offer to you</h2>
+            </div>
+        </div>
+        <div class="row flex-wrap">
+            <div class="col-12">
+                <div class="card-group">
+                    <div class="card">
+                        <img class="card-img-top" src="holder.js/100x180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="holder.js/100x180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="holder.js/100x180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="holder.js/100x180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row flex-wrap">
+            <div class="col-12">
+                <div class="card-group">
+                    <div class="card">
+                        <img class="card-img-top" src="holder.js/100x180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="holder.js/100x180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="holder.js/100x180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="holder.js/100x180/" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      </main>
+      <footer class="footer">
+  <div class="footer__container">
+    
+  </div>
+</footer>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<script src="js/app.min.js"></script>
+  </body>
+</html> 
