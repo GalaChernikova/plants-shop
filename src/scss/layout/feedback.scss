@@ -1,0 +1,66 @@
+.feedback{
+    margin: 0 auto 120px;
+}
+.title-feedback {
+    text-align: center;
+    margin-bottom: 45px;
+}
+.feedback-boxes{
+    @media (max-width: 1200px) {
+        gap: 20px;
+    }
+    @media (max-width: 950px) {
+        margin: 0 auto !important;
+        max-width: 360px;
+        width: 100%;
+    }
+}
+
+.feedback-box {
+    max-width: 360px !important;
+    width: 100% !important;
+    height: 329px;
+    border-radius: 10px;
+    padding: 54px !important;
+}
+
+.feedback-box__name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 39px;
+}
+
+.feedback-box__name h5 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 140%;
+
+    color: #285A43;
+    margin-left: 20px;
+}
+
+.feedback-box p {
+    max-width: 243px;
+    width: 100%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #121212;
+
+    opacity: 0.8;
+}
+
+.box--1{
+    background: #F8F8F8 url("./../../images/background/plant_1.svg") no-repeat right bottom;
+}
+.box--2{
+    background: #F8F8F8 url("./../../images/background/plant_2.svg") no-repeat right bottom;
+}
+.box--3{
+    background: #F8F8F8 url("./../../images/background/plant_3.svg") no-repeat right bottom;
+}
