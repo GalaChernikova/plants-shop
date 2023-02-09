@@ -52,18 +52,23 @@
 
     @media (max-width: 750px) {
         margin: 0 auto;
+        max-width: 516px;
+        width: 100%;
     }
+
+    & img {
+        width: 126px;
+        height: 126px;
+        margin-bottom: 10px;
+
+        @media (max-width: 750px) {
+            margin: 0 auto 10px;
+        }
+    }
+
 }
 
-.feature__feature-box img {
-    width: 126px;
-    height: 126px;
-    margin-bottom: 10px;
 
-    @media (max-width: 750px) {
-        margin: 0 auto 10px;
-    }
-}
 
 .feature-title {
     font-family: 'Lato';

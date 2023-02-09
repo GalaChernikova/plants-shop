@@ -29,6 +29,32 @@
     width: 100%;
     padding: 0 !important;
 
+    & h5 {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 140%;
+
+        color: #285A43;
+        margin: 15px 0 20px;
+        min-height: 56px;
+    }
+
+    & p {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+
+        color: #121212;
+
+        opacity: 0.8;
+        max-width: 360px !important;
+        width: 100%;
+    }
+
 }
 
 .blog-box__img {
@@ -42,68 +68,45 @@
     }
 }
 
-.blog-box h5 {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 140%;
-
-    color: #285A43;
-    margin: 15px 0 20px;
-    min-height: 56px;
-}
-
-.blog-box p {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-
-    color: #121212;
-
-    opacity: 0.8;
-    max-width: 360px !important;
-    width: 100%;
-}
 
 .blog-buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    & a {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 140%;
+
+        color: #285A43;
+        text-decoration: none;
+
+        &:hover {
+            color: #285A43;
+            text-decoration: underline;
+        }
+    }
 }
 
 .blog-buttons__date {
     display: flex;
     align-items: center;
-}
 
-.blog-buttons__date p {
-    margin-left: 5px;
-    margin-bottom: 0;
+    & p {
+        margin-left: 5px;
+        margin-bottom: 0;
 
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
 
-    color: rgba(18, 18, 18, 0.8);
+        color: rgba(18, 18, 18, 0.8);
 
-    opacity: 0.8;
-}
-
-.blog-buttons a {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 140%;
-
-    color: #285A43;
-    text-decoration: none;
-    &:hover{
-        text-decoration: underline;
-      }
+        opacity: 0.8;
+    }
 }

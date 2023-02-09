@@ -4,9 +4,11 @@
     margin: 0 auto 120px;
     padding: 128px 100px;
     background: url("./../../images/email/email.png") no-repeat;
+
     @media (max-width: 800px) {
         padding: 50px;
     }
+
     @media (max-width: 500px) {
         padding: 50px 20px;
     }
@@ -30,9 +32,11 @@
     color: #FFFFFF;
     max-width: 570px;
     width: 100%;
+
     @media (max-width: 1200px) {
         margin-bottom: 25px;
     }
+
     @media (max-width: 500px) {
         font-size: 25px;
     }
@@ -57,12 +61,15 @@
     width: 400px;
     padding: 12px 25px;
     margin-right: 25px;
+
     @media (max-width: 1350px) {
         margin-bottom: 25px;
     }
+
     @media (max-width: 500px) {
         width: 350px;
     }
+
     @media (max-width: 400px) {
         width: 280px;
     }

@@ -1,4 +1,4 @@
 # Plants shop
-Made with Gulp, SCSS/SASS and BEM
+Made with Gulp, SCSS/SASS, Bootstrap 5 and BEM
 
-[Check here](#)
+[Check here](https://plshop.netlify.app/)

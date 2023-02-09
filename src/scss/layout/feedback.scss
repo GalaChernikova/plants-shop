@@ -1,14 +1,17 @@
-.feedback{
+.feedback {
     margin: 0 auto 120px;
 }
+
 .title-feedback {
     text-align: center;
     margin-bottom: 45px;
 }
-.feedback-boxes{
+
+.feedback-boxes {
     @media (max-width: 1200px) {
         gap: 20px;
     }
+
     @media (max-width: 950px) {
         margin: 0 auto !important;
         max-width: 360px;
@@ -55,12 +58,14 @@
     opacity: 0.8;
 }
 
-.box--1{
+.box--1 {
     background: #F8F8F8 url("./../../images/background/plant_1.svg") no-repeat right bottom;
 }
-.box--2{
+
+.box--2 {
     background: #F8F8F8 url("./../../images/background/plant_2.svg") no-repeat right bottom;
 }
-.box--3{
+
+.box--3 {
     background: #F8F8F8 url("./../../images/background/plant_3.svg") no-repeat right bottom;
 }

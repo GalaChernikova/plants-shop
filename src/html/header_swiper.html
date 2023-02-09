@@ -1,13 +1,11 @@
 <style>
-    /* .main-slide {
-
-    } */
     .main-slide-1,
-    .main-slide-3{
+    .main-slide-3 {
         background: url("./../images/main/main_1/main_1.png") no-repeat;
         background-size: cover;
     }
-    .main-slide-2{
+
+    .main-slide-2 {
         background: url("./../images/main/main_2/main_2.png") no-repeat;
         background-size: cover;
     }
@@ -25,7 +23,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        /* height: 100%; */
+        
     }
 
     .swiper-slide img {
@@ -60,32 +58,13 @@
         line-height: 19px;
         text-decoration: underline;
     }
+
     @media (max-width: 1200px) {
-        .swiper-pagination{
+        .swiper-pagination {
             margin-right: 25px;
         }
     }
 
-    /* @media (max-width: 1350px) {
-        .mainSwiper {
-            max-height: 590px;
-        }
-    }
-    @media (max-width: 1200px) {
-        .mainSwiper {
-            max-height: 493px;
-        }
-    }
-    @media (max-width: 1000px) {
-        .mainSwiper {
-            max-height: 367px;
-        }
-    }
-    @media (max-width: 800px) {
-        .mainSwiper {
-            max-height: 273px;
-        }
-    } */
 </style>
 
 <!-- Swiper -->
@@ -93,17 +72,17 @@
     <div class="swiper-wrapper">
         <div class="swiper-slide main-slide main-slide-1">
             @@include('./iconMenu.html', {})
-            
+
             @@include('./main_title.html', {})
         </div>
         <div class="swiper-slide main-slide main-slide-2">
             @@include('./iconMenu.html', {})
-            
+
             @@include('./main_title.html', {})
         </div>
         <div class="swiper-slide main-slide main-slide-3">
             @@include('./iconMenu.html', {})
-            
+
             @@include('./main_title.html', {})
         </div>
     </div>
